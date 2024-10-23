@@ -1,0 +1,29 @@
+pipeline{
+agent any
+stages
+{
+stage('Build')
+{
+steps{
+echo"Building the application.................."
+}
+}
+stage('SAST')
+{
+steps{
+echo"SAST scan is running.................."
+}
+}
+stage('SCA')
+{
+steps{
+echo"SCA scan is running.................."
+}
+}
+stage('DAST')
+{
+steps{
+echo"DAST scan is running.................."
+}
+}
+}
